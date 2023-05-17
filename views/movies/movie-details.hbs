@@ -1,0 +1,23 @@
+<div>
+  <h2>Check the movies details</h2>
+
+  {{#each allMovies}}
+
+    <p>Title: {{title}}</p>
+    <p>Genre: {{genre}}</p>
+    <p>Plot: {{plot}}</p>
+
+  {{/each}}
+
+  {{#each cast}}
+
+    <p>Name: {{name}}</p>
+    <p>Occupation: {{occupation}}</p>
+    <p>CatchPhrase: {{catchPhrase}}</p>
+
+  {{/each}}
+
+  <a href='/movies/{{id}}/edit'>Edit</a>
+</div>
+
+<a href='/'>Home</a>
